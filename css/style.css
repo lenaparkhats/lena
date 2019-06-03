@@ -1,0 +1,491 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+	font-family: "Montserrat";
+	font-size: 16px;
+    color: #2a2a2a;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    width: 1530px;
+    margin: 0 auto;
+}
+header{
+    background: url("../img/bg.jpg");
+}
+header > div{
+    padding-top: 25px;
+}
+header > div > div{
+    padding-bottom: 25px;
+}
+.logotip, .map_adress{
+    float: left;
+    width: 40%;
+}
+.phone{
+    float: left;
+    width: 20%;
+}
+.logo_slog .logo{
+    height: 85px;
+    width: 100px;
+    float: left;
+    background: url("../img/logo.png") no-repeat center;
+}
+.logotip .slog{
+    padding-left: 25px;
+    padding-top: 18px;
+    line-height: 22px;
+    float: left;
+}
+.logotip .slog p {
+    width: 310px;
+    font-size: 14px;
+    color: #999999;
+}
+.map_adress .map{
+    width: 55px;
+    height: 55px;
+    background: url("../img/map.jpg") center;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+}
+.map_adress .map:after{
+    content: "";
+    height: 30px;
+    display: block;
+    background: url("../img/here.png") no-repeat center;
+    margin-top: 10px;
+}
+.map_adress .adress{
+    padding-left: 25px;
+    float: left;
+}
+.map_adress .adress span{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    width: 300px;
+    display: block;
+}
+.map_adress .adress a{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ff7c00;
+    text-decoration: none;
+    border-bottom: #ff7c00 dotted 1px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.phone .tel{
+    height: 55px;
+    width: 55px;
+    background: url("../img/tel.png") center no-repeat;
+    border: 2px solid #ffdebf;
+    border-radius: 50%;
+    float: left;
+    margin-top: 5px;
+}
+.phone .number_tel{
+    float: left;
+    margin-left: 15px;
+}
+.phone .number_tel a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+.phone .number_tel .last{
+    padding-left: 10px;
+}
+.phone .number_tel > span{
+    color: #999;
+    margin-top: 10px;
+    display: block;
+}
+
+/*----------Блок меню*/
+
+a:hover,
+button:hover{
+    cursor: pointer;
+}
+.menu{
+    background: url("../img/shadow.png") no-repeat;
+    border-bottom: solid 2px #d8e8ee;
+}
+
+.menu li{
+    display: inline-block;
+    height: 70px;
+    vertical-align: middle;
+    margin-right: 22px;
+}
+.menu a{
+    letter-spacing: -2px;
+    display: block;
+    line-height: 93px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2a2a2a;
+}
+.menu  .first{
+    border-bottom: solid 3px #ff810b;
+}
+.menu a:hover {
+    color: #ff810b;
+}
+
+/*----------стили банера*/
+.baner{
+    padding: 60px 0px;
+    position: relative;
+}
+.baner:before{
+    content: "";
+    display: block;
+    height: 50px;
+    width: 1430px;
+    /*top: 485px;*/
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    background: url("../img/bg_bef.png") no-repeat ;
+}
+.baner .slog_plus{
+    float: left;
+    width: 50%;
+}
+.baner h1{
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+}
+.baner .plus{
+    margin-top: 10px;
+}
+.baner .plus [class^="it"]{
+    float: left;
+    width: 50%;
+    margin-top: 40px;
+}
+.baner .plus .img{
+    height: 75px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+.baner .plus .it1 .img{
+    background-image: url("../img/ban1.png");
+}
+.baner .plus .it2 .img{
+    background-image: url("../img/ban2.png");
+}
+.baner .plus .it3 .img{
+    background-image: url("../img/ban3.png");
+}
+.baner .plus .it4 .img{
+    background-image: url("../img/ban4.png");
+}
+.baner .plus .name{
+    padding-top: 5px;
+    margin-left: 15px;
+    float: left;
+    width: 280px;
+    display: inline-block;
+    /*vertical-align: middle;*/
+}
+.baner .name span{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 25px;
+    text-transform: uppercase;
+    width: 230px;
+    display: block;
+}
+.baner .name p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*--------скачать прайс*/
+
+.block_price{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    float: right;
+    width: 360px;
+}
+.block_price > div{
+    border: 1px #ededed solid;
+    border-radius: 15px;
+    padding: 40px 20px 35px 20px;
+}
+.block_price .name{
+    font-size: 26px;
+    font-weight: 800;
+    color: #212121;
+    line-height: 36px;
+    display: block;
+    width: 310px;
+    text-align: center;
+}
+.block_price .date{
+    color: #ff7c00;
+    font-weight: 800;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.block_price .img{
+    height: 202px;
+    background: center url("../img/mag.png") no-repeat;
+    margin-top: 20px;
+}
+.block_price .butt{
+    background: #ff9e3c; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff9e3c 0%, #ff4800 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ff9e3c 0%,#ff4800 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff9e3c 0%,#ff4800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9e3c', endColorstr='#ff4800',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    padding: 20px 0px;
+    border-bottom: #e22300 5px solid;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    border-radius: 8px 8px 20px 20px;
+}
+.block_price .butt .block_pdf{
+    display: inline-block;
+    float: left;
+    padding-top: 8px;
+}
+.block_price .butt .down{
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 16px;
+    text-align: center;
+    display: block;
+}
+.block_price .butt .size{
+    font-size: 12px;
+    line-height: 22px;
+    display: block;
+    text-align: center;
+}
+.block_price .butt .pdf{
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin: 0px 10px 0px 15px;
+    width: 50px;
+    background: url("../img/butt.png") no-repeat center;
+}
+.baner .butt_right{
+    position: fixed;
+    right: 0px;
+    background: #9fca4f; /* Old browsers */
+    background: -moz-linear-gradient(top, #9fca4f 0%, #5bb25e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #9fca4f 0%,#5bb25e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #9fca4f 0%,#5bb25e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fca4f', endColorstr='#5bb25e',GradientType=0 );
+    /*width: 10px;*/
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.8;
+    border-radius: 10px 0px 0px 10px;
+}
+.baner .butt_right span{
+    font-weight: 800;
+    font-size: 8px;
+    letter-spacing: -2px;
+}
+.baner .butt_right .img{
+    height: 40px;
+    width: 40px;
+    margin: 0px 32px 10px 32px;
+}
+.baner .butt_right .butt1 .img{
+    background: url("../img/butt_r1.png") no-repeat center;
+}
+.baner .butt_right .butt2 .img{
+    background: url("../img/butt_r2.png") no-repeat center;
+}
+.baner .butt_right .butt3 .img{
+    background: url("../img/butt_r3.png") no-repeat center;
+}
+.baner .butt_right [class^="butt"]{
+    border-bottom: 1px #95cb84 solid;
+    padding: 18px 0px;
+}
+.baner .butt_right [class^="butt"]:last-child{
+    border: none;
+}
+.baner .butt_right .butt2 span{
+    margin: 0px 5px;
+}
+
+.baner .butt_right span{
+    text-align: center;
+    display: block;
+}
+.baner .butt_right [class^="butt"]:hover{
+    cursor: pointer;
+    background-color: #95cb84;
+    border-radius: 10px 0 0 10px;
+}
+.baner .butt_right [class^="butt"]:nth-child(2):hover{
+    border-radius: 0px;
+}
+
+.cena > div{
+    box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+    /*0 10px 10px rgba(0,0,0,0.22);*/
+    padding: 75px 50px;
+}
+.cena h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+}
+.cena > div > p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #999;
+    margin-top: 35px;
+}
+.cena .proc{
+    margin-top: 55px;
+    margin-bottom: 60px;
+}
+.cena .proc > span{
+    color: #ff7c00;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: 5px;
+    width: 15%;
+}
+.cena .proc .full{
+    float: left;
+    /*width: 175px;*/
+    width: 20%;
+    margin-left: 15px;
+    height: 35px;
+    background: #ff8803; /* Old browsers */
+    background: -moz-linear-gradient(left, #ff8803 0%, #ff8d37 48%, #fb3d02 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ff8803 0%,#ff8d37 48%,#fb3d02 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ff8803 0%,#ff8d37 48%,#fb3d02 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8803', endColorstr='#fb3d02',GradientType=1 ); /* IE6-9 */
+    border-radius: 20px 0px 0px 20px;
+    text-align: center;
+    opacity: 0.9;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5)
+}
+.cena .proc .full span{
+    display: block;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.cena .proc .zero{
+    float: left;
+    height: 35px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5);
+    width: 63%;
+    background-color: #f6f6f6;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+.cena .ques_summ .ques{
+    width: 70%;
+    float: left;
+}
+.cena .ques_summ .ques > span{
+    font-size: 26px;
+    font-weight: 800;
+    color: #212121;
+}
+.cena .ques_summ .parags{
+    margin: 25px -15px;
+}
+.cena .ques_summ .parags > div{
+    /*margin: 0px 15px;*/
+    width: calc(100% / 3);
+    float: left;
+}
+.cena .parag{
+    margin: 0px 15px;
+}
+.cena .parag > div{
+    border: #ededed 1px solid;
+    border-radius: 10px;
+    padding: 4px;
+}
+.cena .parag .img{
+    /*width: 100%;*/
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cena .parag .ok{
+    margin: 25px 0px 20px 15px;
+}
+.cena .parag .ok div{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ededed;
+    border-radius: 50%;
+    float: left;
+}
+.cena .parag .ok span{
+    float: left;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #999;
+}
+.cena .ques .button{
+    margin-top: 35px;
+    text-align: center;
+}
+.cena .ques .button .prev{
+    width: 150px;
+    background-image: url("../img/prev.png");
+    background-repeat: no-repeat;
+    background-position: 10px 2px;
+    height: 50px;
+    color: #fff;
+}
+
+
+
+
+
+
+
